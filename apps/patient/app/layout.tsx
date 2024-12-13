@@ -1,4 +1,4 @@
-import './global.css';
+import '@sca/shared/styles/globals.scss';
 
 export const metadata = {
   title: 'Welcome to patient',

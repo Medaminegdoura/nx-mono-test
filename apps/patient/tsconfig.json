@@ -14,6 +14,10 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
+    "baseUrl": ".", // Set baseUrl to the root (or your desired folder)
+    "paths": {
+      "@sca/shared/*": ["../../shared/src/*"] // Adjust this to your folder structure
+    },
     "plugins": [
       {
         "name": "next"
@@ -28,7 +32,9 @@
     "**/*.jsx",
     "../../apps/patient/.next/types/**/*.ts",
     "../../dist/apps/patient/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "next.config.js"
   ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }
